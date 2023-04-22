@@ -1,0 +1,14 @@
+<template>
+  <lightning-card title="Hello World" icon-name="standard:actions_and_buttons">
+    <p class="slds-p-horizontal_small">Static Text : Welcome to learn LWC</p>
+    <p class="slds-p-horizontal_small">Dynamic Text : {greeting}</p>
+    <p class="slds-p-horizontal_small">
+      <lightning-input
+        type="text"
+        label="Enter your message"
+        onchange={changeHandler}
+      ></lightning-input>
+    </p>
+    <p class="slds-p-horizontal_small">{welcomeMessage}</p>
+  </lightning-card>
+</template>

@@ -1,0 +1,16 @@
+<template>
+  <lightning-card title="Looping" icon-name="custom:custom14">
+    <div class="slds-var-p-around_small">
+      <template for:each={car} for:item="caritem">
+        <p key={carItem}>{caritem}</p>
+      </template>
+    </div>
+  </lightning-card>
+  <lightning-card title="Looping" icon-name="custom:custom14">
+    <div class="slds-var-p-around_small">
+      <template for:each={contacts} for:item="con">
+        <p key={con.id}>{con.name} - {con.role}</p>
+      </template>
+    </div>
+  </lightning-card>
+</template>

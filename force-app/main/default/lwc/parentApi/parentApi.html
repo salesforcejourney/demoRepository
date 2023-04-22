@@ -1,0 +1,26 @@
+<template>
+  <lightning-card title="Parent API" icon-name="custom:custom14">
+    <div class="slds-var-m-around_small">
+      <p>Parent Component</p>
+    </div>
+    <div class="slds-var-m-around_small">
+      <lightning-button
+        variant="brand"
+        onclick={clickhandler}
+        label="Call Child"
+      ></lightning-button>
+    </div>
+    <div class="slds-var-m-around_small">
+      <c-child-api
+        lwc:ref="mychild"
+        message="Hello from Parent Component"
+      ></c-child-api>
+    </div>
+  </lightning-card>
+</template>
+
+<!-- childApi : camelCase
+child-api : kebab-case
+
+welcomeToWorld : camelCase
+welcome-to-world -->

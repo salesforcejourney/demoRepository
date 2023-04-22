@@ -1,0 +1,42 @@
+<template>
+  <lightning-card title="Personal Calculator" icon-name="custom:custom14">
+    <lightning-input
+      type="number"
+      label="Enter number 1"
+      onchange={changeHandler}
+      class="slds-p-around_x-small"
+      name="number1"
+    ></lightning-input>
+    <lightning-input
+      type="number"
+      label="Enter number 2"
+      onchange={changeHandler}
+      class="slds-p-around_x-small"
+      name="number2"
+    ></lightning-input>
+    <lightning-button
+      label="Add"
+      onclick={clickHandler}
+      variant="brand"
+      class="slds-p-around_x-small"
+    ></lightning-button>
+    <lightning-button
+      label="Sub"
+      onclick={clickHandler}
+      variant="brand"
+      class="slds-p-around_x-small"
+    ></lightning-button>
+    <lightning-button
+      label="Mul"
+      onclick={clickHandler}
+      variant="brand"
+      class="slds-p-around_x-small"
+    ></lightning-button>
+    <lightning-button
+      label="Div"
+      onclick={clickHandler}
+      variant="brand"
+      class="slds-p-around_x-small"
+    ></lightning-button>
+  </lightning-card>
+</template>
